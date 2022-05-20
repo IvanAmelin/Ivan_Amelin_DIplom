@@ -9,6 +9,17 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Futura PT Demi';
+    src: url('fonts/futuraPT/FuturaPT-Demi.eot');
+    src: local('Futura PT Demi'), local('FuturaPT-Demi'),
+        url('fonts/futuraPT/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+        url('fonts/futuraPT/FuturaPT-Demi.woff2') format('woff2'),
+        url('fonts/futuraPT/FuturaPT-Demi.woff') format('woff'),
+        url('fonts/futuraPT/FuturaPT-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
 body {
     font-family: 'Futura PT';
     margin: 0;
@@ -34,6 +45,9 @@ ul {
 .container {
     width: 1200px;
     margin: 0 auto;
+}
+p, table {
+    font-family: 'Futura PT Demi';
 }
 .row {
     display: flex;
@@ -538,6 +552,12 @@ table th {
     }
     .nakl-mobile {
         display: block;
+    }
+    table {
+        font-size: 9px;
+    }
+    th {
+        padding: 0px;
     }
 }
 @media(max-width: 576px) {
